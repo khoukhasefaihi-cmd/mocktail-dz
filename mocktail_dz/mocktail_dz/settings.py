@@ -33,4 +33,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mocktail_dz.wsgi.application'
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'main' / 'static',
+]
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
